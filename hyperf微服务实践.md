@@ -31,11 +31,11 @@ RPC通信：hyperf/json-rpc  通信方式http协议 方便后续研究调用java
 <font color=red>注意有坑1：win10系统版本原因、我说一下安装完之后注意事项。</font>
 <font color=red>有些系统可能不支持win10 liux 子系统wsl2.0</font>
 
-![image-20210801123133505](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801123133505.png)
+![image-20210801123133505](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801123133505.png?raw=true)
 
 <font color=red>解决一些配置的坑：</font>
 
-![image-20210801124022911](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801124022911.png)
+![image-20210801124022911](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801124022911.png?raw=true)
 
 ### 2.docker安装hyperfy2.2开发环境
 
@@ -43,7 +43,7 @@ RPC通信：hyperf/json-rpc  通信方式http协议 方便后续研究调用java
 
 首先通过cmd 运行docker --version 是否安装成功docker 没有请回到第一步
 
-![image-20210801125422425](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801125422425.png)
+![image-20210801125422425](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801125422425.png?raw=true)
 
 #### 2.搭建开发环境
 
@@ -61,7 +61,7 @@ docker run -v /e/php_code/hyperf-skeleton/msg:/hyperf-skeleton -p 9503:9503 -p 9
 
 执行成功后会进入容器如下图 
 
-![image-20210801130113859](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801130113859.png)
+![image-20210801130113859](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801130113859.png?raw=true)
 
 参数说明
 
@@ -81,7 +81,7 @@ https://yeasy.gitbook.io/docker_practice/
 
 找到我们创建的docker 容器 进入容器里面构建代码
 
-![image-20210801130933304](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801130933304.png)
+![image-20210801130933304](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801130933304.png?raw=true)
 
 ### 2.创建msg项目、user项目
 
@@ -96,11 +96,11 @@ composer create-project hyperf/hyperf-skeleton
 
 
 
-![image-20210801132702978](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801132702978.png)
+![image-20210801132702978](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801132702978.png?raw=true)
 
 其他都默认，唯独这里我们选择 **1** json rpc 带有服务治理 如果没选要自己单独composer 引入
 
-![image-20210801132821636](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801132821636.png)
+![image-20210801132821636](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801132821636.png?raw=true)
 
 
 
@@ -112,7 +112,7 @@ composer create-project hyperf/hyperf-skeleton
 php bin/hyperf.php start
 ```
 
-![image-20210801134056035](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801134056035.png)
+![image-20210801134056035](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801134056035.png?raw=true)
 
 ```
 http://localhost:9501/
@@ -120,13 +120,13 @@ http://localhost:9501/
 
 
 
-![image-20210801134235546](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801134235546.png)
+![image-20210801134235546](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801134235546.png?raw=true)
 
 ## 四、phpstrom插件配置
 
 主要方便后续写代码支持注解、不是必须、锦上添花
 
-![image-20210801145307074](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801145307074.png)
+![image-20210801145307074](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801145307074.png?raw=true)
 
 ## 五、创建Msg项目---服务提供者
 
@@ -261,7 +261,7 @@ http://localhost:9504/
 
 
 
-![image-20210801143520403](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801143520403.png)
+![image-20210801143520403](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801143520403.png?raw=true)
 
 ## 六、编写User项目 --- 服务消费者
 
@@ -381,7 +381,7 @@ http://localhost:9501/
 
 
 
-![image-20210801151513332](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801151513332.png)
+![image-20210801151513332](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801151513332.png?raw=true)
 
 
 
@@ -411,7 +411,7 @@ consul agent -dev -bind=0.0.0.0 -client 0.0.0.0 -ui
 
 #### 3) win10访问consul ui
 
-![image-20210801135753071](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801135753071.png)
+![image-20210801135753071](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801135753071.png?raw=true)
 
 ### 2.Msg服务发布到服务中心
 
@@ -542,6 +542,6 @@ return [
 
 - **验证服务注册和服务发现**
 
-![image-20210801165729375](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801165729375.png)
+![image-20210801165729375](https://github.com/guoyizhou/hyperf-microservice-practice/blob/91e371600cde1fe75680cd88b025740f3d0af9f3/img/image-20210801165729375.png?raw=true)
 
 - **测试服务调用**
